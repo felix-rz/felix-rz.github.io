@@ -1,0 +1,297 @@
+#container.loading {
+    overflow: hidden;
+    height: 100vh;
+}
+
+#container {
+    max-width: 1900px;
+}
+
+#loader {
+    background: rgba(255, 255, 255, 0.8);
+    bottom: 10px;
+    z-index: 1000;
+}
+
+.logo-icon {
+    height: 2em;
+    width: auto;
+}
+
+.fs-1 {
+    font-size: calc(2.375rem + 1.5vw) !important
+}
+
+.fs-2 {
+    font-size: calc(2.325rem + .9vw) !important;
+}
+
+.head-icon {
+    height: 5em;
+    width: auto;
+}
+
+
+
+.grid {
+
+    height: 150px;
+}
+
+.dashboard-layer {
+    z-index: 2;
+}
+
+.slide {
+    height: 80vh;
+}
+
+.graph {
+    height: 100vh;
+    z-index: 0;
+}
+
+.slide-section {
+    margin-bottom: 30vh;
+}
+
+.slides {
+    z-index: 2;
+    margin-top: calc(-100vh + 50px);
+}
+
+.slide-section h2 {
+    margin-bottom: 1em;
+    z-index: 1;
+    padding-top: 2em;
+
+}
+
+.bg {
+    background: rgba(255, 255, 255, 0.8);
+}
+
+.variable .name {
+    background: #595e62;
+    color: #c9c9c9;
+}
+
+.variable .value {
+    color: #999;
+    background: #fff;
+}
+
+.variable.selected .name {
+    background: #333;
+    color: #fff;
+}
+
+.variable.selected .value {
+    color: #000;
+    background: #f7f7f7;
+}
+
+.option {
+    cursor: pointer;
+    padding: 0.2em 0.6em;
+    display: inline-block;
+    margin-right: 0.2em;
+    margin-bottom: 0.4em;
+    font-size: 0.8em;
+    transition: all 0.2s;
+    color: #595e62;
+
+}
+
+.option.selected {
+    background: #595e62;
+    color: #fff;
+}
+
+.option:hover {
+    border-color: #000 !important;
+    color: #595e62;
+}
+
+.option.selected:hover {
+    color: #fff;
+}
+
+.options-divider {
+    font-size: 0.8em;
+    color: #595e62;
+    font-style: italic;
+}
+
+.options-divider .divider {
+    height: 0;
+}
+
+/*graph*/
+/*line chart*/
+.linechart .axis-x path,
+.linechart .axis-x line {
+    stroke: #d2d4dc;
+}
+
+.linechart .axis-y .domain {
+    stroke: #d2d4dc;
+}
+
+.linechart .axis-y.light line {
+    stroke: #d2d4dc;
+    stroke-dasharray: 2 2;
+}
+
+.linechart .tick text,
+.linechart .axis-x-label,
+.linechart .axis-y-label {
+    fill: #afafaf;
+    font-size: 0.7rem !important;
+}
+
+.linechart .graph-text {
+    fill: #afafaf;
+}
+
+.linechart .graph-line {
+    stroke: #d2d4dc;
+}
+
+/* stackedbarchart*/
+.stackedbarchart .axis-y .domain {
+    stroke: none;
+}
+
+.stackedbarchart .axis-y line {
+    stroke: rgba(89, 83, 2, 0.2);
+    stroke-dasharray: 2 2;
+}
+
+/*slider*/
+.slider {
+    width: 100%;
+}
+
+.slider:hover {
+    opacity: 1;
+    /* Fully shown on mouse-over */
+}
+
+.slider input[type=range]:focus {
+    outline: none;
+}
+
+.slider input[type="range"] {
+    -webkit-appearance: none;
+    /* Override default CSS styles */
+    appearance: none;
+    width: 100%;
+    /* Full-width */
+    height: 5px;
+    /* Specified height */
+    background: rgb(89, 94, 98, 0.4);
+    /* Grey background */
+    outline: none;
+    /* Remove outline */
+    /*    opacity: 0.7;*/
+    /* Set transparency (for mouse-over effects on hover) */
+    -webkit-transition: .4s;
+    /* 0.2 seconds transition on hover */
+    transition: opacity .4s;
+    border: none;
+}
+
+.slider input[type="range"]::-webkit-slider-thumb {
+    -webkit-appearance: none !important;
+    appearance: none;
+    width: 1.5em;
+    height: 1.5em;
+    background: #ffffff;
+    border: 4px solid #595e62;
+    border-radius: 50%;
+    cursor: pointer;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+}
+
+.slider input[type="range"]::-moz-range-thumb {
+    width: 2em;
+    height: 2em;
+    background: #595e62;
+    cursor: pointer;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+}
+
+.slider input[type="range"]::-webkit-slider-thumb:hover {
+    background: #d2d4dc;
+}
+
+/*end slider*/
+
+/*graph*/
+@media screen and (min-width: 2500px) {}
+
+@media screen and (min-width: 1300px) {}
+
+@media screen and (max-width: 1024px) {}
+
+@media screen and (min-width: 576px) {
+    .border-sm-0 {
+        border: none !important;
+    }
+
+    .border-sm-top {
+        border-top: 1px solid #dee2e6 !important;
+    }
+}
+
+@media screen and (max-width: 750px) {}
+
+
+@media screen and (max-width: 768px) {
+    .slide-section h2 {
+        margin-bottom: 0.5em;
+        /*top: 100vw;*/
+        top: 2em;
+        padding-top: 0;
+    }
+
+    
+}
+
+@media screen and (max-width: 485px) {
+    .logo-icon {
+        height: 1em;
+    }
+    .fs-2 {
+        font-size: calc(1.725rem + .9vw) !important
+    }
+
+    .slides {
+        margin-top: 0 !important;
+    }
+
+    .slide {
+        height: auto;
+        margin-bottom: 3em;
+    }
+}
+
+@media (orientation: portrait) {
+    .graph {
+        height: 100vw;
+        top: 3em;
+    }
+
+    .slides {
+        margin-top: calc(-30vw + 50px);
+    }
+
+    .slide {
+        height: 80vh;
+    }
+
+    .slide-section {
+        margin-bottom: 12em;
+    }
+}
